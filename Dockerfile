@@ -5,7 +5,8 @@ FROM openjdk:19-jdk-alpine
 WORKDIR /app
 
 # Copia el archivo JAR generado en el contenedor
-COPY target/*.jar app.jar
+COPY target/Restobar-CavaDorada-0.0.1-SNAPSHOT.jar app.jar
+
 
 # Exponer el puerto en el que correrá la aplicación
 EXPOSE 8080
